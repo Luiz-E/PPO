@@ -6,62 +6,13 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-<body style="background-color: black;">
-    <a-scene>
-        <a-box 
-            height="1"
-            width="25.2"
-            depth="8.3"
-            position="0 -1 -9.15">
-        </a-box>
-        <a-box 
-            height="1"
-            width="8.3"
-            depth="8.05"
-            position="-16.745 -1 -9.275">
-                <a-box
-                    height="5"
-                    width="8.55"
-                    depth="0.25"
-                    position="-0.125 2 4.15">
-                </a-box>
-                <a-box
-                    height="5"
-                    width="0.25"
-                    depth="8.05"
-                    position="-4.275 2 0">
-                </a-box>
-        </a-box>
-        <a-box 
-            height="1"
-            width="18.3"
-            depth="3.75"
-            position="-11.995 -1 -15.175">
-        </a-box>
-        <a-box 
-            height="1"
-            width="9.9"
-            depth="31.1"
-            position="4.4 -1 -28.85">
-        </a-box>
-        <a-box 
-            height="1"
-            width="31.75"
-            depth="11.5"
-            position="28.47 -1 -7.55">
-        </a-box>
-        <a-box 
-            height="1"
-            width="9.45"
-            depth="4"
-            position="27.17 -1 -15.3">
-        </a-box>
-        <a-box 
-            height="1"
-            width="1.9"
-            depth="2"
-            position="43.395 -1 -14.3">
-        </a-box>
-    </a-scene>
+<body style="background-color: white;">
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="tree" src="IFC.gltf"></a-asset-item>
+            </a-assets>
+            
+            <a-entity position="0 0 0" gltf-model="#tree"></a-entity>
+          </a-scene>
 </body>
 </html>
